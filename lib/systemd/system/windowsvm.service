@@ -1,0 +1,9 @@
+[Unit]
+Description=Start VM with Windows10
+Requires=NetworkManager.service
+
+[Service]
+ExecStart=/mnt/hexen/startvm.sh
+ExecStop=/mnt/hexen/stopvm.sh
+Restart=on-failure
+
